@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>つみかず | 小さなWebアプリとLINEスタンプ</title>
+<meta name="description" content="つみかずの公式サイト。思考整理アプリ「かんがえの木」や、制作に役立つ小さなWebアプリ（工房シリーズ）、LINEスタンプを公開しています。">
+<link rel="icon" href="icon.png">
+<style>
+  :root{
+    --bg:#fdf8ec; --card:#ffffff; --ink:#3d3428; --sub:#8a7d68;
+    --accent:#7a9e43; --accent-dark:#5d7d31; --line:#e8dfc9;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.8;}
+  .wrap{max-width:760px;margin:0 auto;padding:24px 18px 56px}
+  header{text-align:center;padding:28px 0 8px}
+  header img{width:96px;height:96px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+  h1{font-size:28px;letter-spacing:.08em;margin-top:10px}
+  .tagline{color:var(--sub);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px 18px;margin-top:22px}
+  h2{font-size:19px;color:var(--accent-dark);border-bottom:2px solid var(--line);padding-bottom:6px;margin-bottom:12px}
+  p{font-size:15px;margin-bottom:10px}
+  .app-link{display:block;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;background:#fffdf6}
+  .app-link:hover{border-color:var(--accent)}
+  .app-link .name{font-weight:bold;font-size:17px;color:var(--accent-dark)}
+  .app-link .desc{font-size:13.5px;color:var(--sub)}
+  ol.steps{margin:6px 0 10px 22px;font-size:15px}
+  ol.steps li{margin-bottom:6px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:bold;padding:10px 22px;border-radius:999px;margin-top:6px}
+  .btn:hover{background:var(--accent-dark)}
+  footer{text-align:center;color:var(--sub);font-size:13px;margin-top:34px}
+  footer a{color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="つみかずのアイコン（笑う犬と赤い水玉バンダナ）">
+    <h1>つみかず</h1>
+    <p class="tagline">小さなWebアプリと、LINEスタンプを作っています。</p>
+  </header>
+
+  <section>
+    <h2>つみかずについて</h2>
+    <p>「自分が使いたいものを、まず自分で作る」をモットーに、ふだんの暮らしや制作の手伝いになる小さな道具を公開しています。どれもブラウザだけで動くので、インストール不要ですぐ使えます。</p>
+    <p>作ったアプリやスタンプへのご感想・ご相談は、LINE公式アカウントで受け付けています。</p>
+    <a class="btn" href="https://line.me/R/ti/p/@380pjkcp">LINE公式アカウント（@380pjkcp）</a>
+  </section>
+
+  <section>
+    <h2>かんがえの木</h2>
+    <p>頭の中のもやもやを、木の枝のように広げて整理する思考ツールです。中心にテーマを置き、思いついたことを枝として足していきます。</p>
+    <ol class="steps">
+      <li>中心の丸に、考えたいテーマを書く</li>
+      <li>枝を足して、思いつくことを広げていく</li>
+      <li>枝ごとに「◎残す／△保留／✕切る」で判断すると、切った枝は畳まれて、木の中心が少しずつ移動します</li>
+    </ol>
+    <p>データは使っている端末の中にだけ保存されます。サーバーには送られません。</p>
+    <a class="app-link" href="https://kangaenoki.tumikazu.com/">
+      <span class="name">かんがえの木 をひらく</span><br>
+      <span class="desc">思考整理アプリ（無料・登録不要）</span>
+    </a>
+  </section>
+
+  <section>
+    <h2>工房シリーズ（制作お助けアプリ）</h2>
+    <a class="app-link" href="https://komomo0680-oss.github.io/Irodori-kobo/">
+      <span class="name">イロドリ工房</span><br>
+      <span class="desc">バナー作りのためのカラーツール</span>
+    </a>
+    <a class="app-link" href="https://komomo0680-oss.github.io/sukerun-kobo/">
+      <span class="name">すけるん工房</span><br>
+      <span class="desc">スタンプ・イラストの背景を透明にするツール</span>
+    </a>
+    <a class="app-link" href="https://komomo0680-oss.github.io/Simau-kobo/">
+      <span class="name">しまう工房</span><br>
+      <span class="desc">完成した作品を整理してしまう管理ツール</span>
+    </a>
+  </section>
+
+  <section>
+    <h2>LINEスタンプ</h2>
+    <p>漢字キャラクター「MOJI BEASTS」などのLINEスタンプを販売中です。</p>
+    <a class="app-link" href="https://store.line.me/stickershop/author/6744525/ja">
+      <span class="name">LINE STORE の作者ページ</span><br>
+      <span class="desc">販売中のスタンプ一覧はこちら</span>
+    </a>
+  </section>
+
+  <footer>
+    <p><a href="privacy.html">プライバシーポリシー</a></p>
+    <p>© 2026 つみかず</p>
+  </footer>
+</div>
+</body>
+</html>

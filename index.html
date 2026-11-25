@@ -16,9 +16,12 @@
   body{background:var(--bg);color:var(--ink);font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.8;}
   .wrap{max-width:760px;margin:0 auto;padding:24px 18px 56px}
   header{text-align:center;padding:28px 0 8px}
-  header img{width:96px;height:96px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+  header img{width:120px;height:120px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.12)}
   h1{font-size:28px;letter-spacing:.08em;margin-top:10px}
-  .tagline{color:var(--sub);font-size:14px}
+  .tagline{color:var(--ink);font-size:16.5px;font-weight:bold;margin-top:4px}
+  .subline{color:var(--sub);font-size:13.5px}
+  .top-photos{display:flex;gap:10px;margin:18px 0 2px}
+  .top-photos img{flex:1;width:100%;height:auto;border-radius:12px;display:block}
   section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px 18px;margin-top:22px}
   h2{font-size:19px;color:var(--accent-dark);border-bottom:2px solid var(--line);padding-bottom:6px;margin-bottom:12px}
   p{font-size:15px;margin-bottom:10px}
@@ -54,12 +57,18 @@
   <header>
     <img src="icon.png" alt="つみかずのアイコン（笑う犬と赤い水玉バンダナ）">
     <h1>つみかず</h1>
-    <p class="tagline">小さなWebアプリと、LINEスタンプを作っています。</p>
+    <p class="tagline">自分が使いたいものを、まず自分で作る。</p>
+    <p class="subline">小さなWebアプリと、LINEスタンプの置き場所です。</p>
+    <div class="top-photos">
+      <img src="top-fence.jpg" alt="夕方のフェンスと空">
+      <img src="top-illumination.jpg" alt="街のイルミネーション">
+      <img src="top-arcade.jpg" alt="ゲームセンターの店内">
+    </div>
   </header>
 
   <section>
     <h2>つみかずについて</h2>
-    <p>「自分が使いたいものを、まず自分で作る」をモットーに、ふだんの暮らしや制作の手伝いになる小さな道具を公開しています。どれもブラウザだけで動くので、インストール不要ですぐ使えます。</p>
+    <p>ふだんの暮らしや制作の手伝いになる小さな道具を作って、公開しています。どれもブラウザだけで動くので、インストール不要ですぐ使えます。</p>
     <p>ここにあるアプリは、どれも自分の生活や制作の中で「これがほしい」と思ったものばかりです。派手な機能はありませんが、毎日の中でちょっと役に立つものを目指しています。</p>
     <p>作ったアプリやスタンプへのご感想・ご相談は、LINE公式アカウントで受け付けています。</p>
     <a class="btn" href="https://line.me/R/ti/p/@380pjkcp">LINE公式アカウント（@380pjkcp）</a>

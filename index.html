@@ -26,6 +26,7 @@
   .app-link:hover{border-color:var(--accent)}
   .app-link .name{font-weight:bold;font-size:17px;color:var(--accent-dark)}
   .app-link .desc{font-size:13.5px;color:var(--sub)}
+  .app-link .more{display:block;font-size:13.5px;color:var(--ink);margin-top:6px;line-height:1.7}
   ol.steps{margin:6px 0 10px 22px;font-size:15px}
   ol.steps li{margin-bottom:6px}
   .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:bold;padding:10px 22px;border-radius:999px;margin-top:6px}
@@ -37,6 +38,13 @@
   .stamp.r1 img{transform:rotate(-5deg)}
   .stamp.r2 img{transform:rotate(3deg)}
   .stamp.r3 img{transform:rotate(-2deg)}
+  .photos{display:flex;gap:10px;margin:12px 0 4px}
+  .photos figure{flex:1}
+  .photos img{width:100%;height:auto;border-radius:10px;display:block}
+  .photos figcaption{font-size:12px;color:var(--sub);text-align:center;margin-top:4px}
+  .wide-photo{margin:12px 0 4px;text-align:center}
+  .wide-photo img{max-width:420px;width:100%;height:auto;border-radius:10px}
+  .wide-photo figcaption{font-size:12px;color:var(--sub);margin-top:4px}
   footer{text-align:center;color:var(--sub);font-size:13px;margin-top:34px}
   footer a{color:var(--sub)}
 </style>
@@ -52,13 +60,14 @@
   <section>
     <h2>つみかずについて</h2>
     <p>「自分が使いたいものを、まず自分で作る」をモットーに、ふだんの暮らしや制作の手伝いになる小さな道具を公開しています。どれもブラウザだけで動くので、インストール不要ですぐ使えます。</p>
+    <p>ここにあるアプリは、どれも自分の生活や制作の中で「これがほしい」と思ったものばかりです。派手な機能はありませんが、毎日の中でちょっと役に立つものを目指しています。</p>
     <p>作ったアプリやスタンプへのご感想・ご相談は、LINE公式アカウントで受け付けています。</p>
     <a class="btn" href="https://line.me/R/ti/p/@380pjkcp">LINE公式アカウント（@380pjkcp）</a>
   </section>
 
   <section>
     <h2>かんがえの木</h2>
-    <p>頭の中のもやもやを、木の枝のように広げて整理する思考ツールです。中心にテーマを置き、思いついたことを枝として足していきます。</p>
+    <p>頭の中のもやもやを、木の枝のように広げて整理する思考ツールです。中心にテーマを置き、思いついたことを枝として足していきます。考えが堂々巡りしてしまうときの、頭の整理にどうぞ。</p>
     <ol class="steps">
       <li>中心の丸に、考えたいテーマを書く</li>
       <li>枝を足して、思いつくことを広げていく</li>
@@ -73,52 +82,68 @@
 
   <section>
     <h2>写真と音のアプリ</h2>
-    <p>日本のふだんの風景を、写真とその場所の音で届けるアプリです。写真をタップすると、その場所の音が流れます。</p>
+    <p>日本のふだんの風景を、写真とその場所の音で届けるアプリです。観光地のきれいな写真ではなく、通勤の電車や商店街、公園といった「ふだんの日本」を集めています。日本に来たことがある人にも、来たくても来られない人にも、もう一度あの空気を思い出してもらえたらと思って作りました。</p>
+    <div class="photos">
+      <figure><img src="ej-escalator.jpg" alt="駅のエスカレーター" loading="lazy"><figcaption>駅のエスカレーター</figcaption></figure>
+      <figure><img src="ej-gacha.jpg" alt="ガチャガチャの機械" loading="lazy"><figcaption>ガチャガチャ</figcaption></figure>
+      <figure><img src="ej-bicycle.jpg" alt="駐輪場の自転車" loading="lazy"><figcaption>駐輪場</figcaption></figure>
+    </div>
     <a class="app-link" href="https://komomo0680-oss.github.io/everyday-japan/">
       <span class="name">Everyday Japan</span><br>
       <span class="desc">電車や商店街、公園など、日常の風景と音のコレクション</span>
+      <span class="more">写真をタップすると、その場所で録った音が流れます。音も含めて「その場所」だと考えて、写真と音は必ずセットで集めています。</span>
     </a>
+    <figure class="wide-photo"><img src="expo-ring.jpg" alt="大阪・関西万博の大屋根リング（夜）" loading="lazy"><figcaption>大屋根リング（夜）</figcaption></figure>
     <a class="app-link" href="https://komomo0680-oss.github.io/expo-2025/">
       <span class="name">大阪・関西万博2025 写真集</span><br>
       <span class="desc">会場で撮った写真18枚の記録ページ</span>
+      <span class="more">2025年の大阪・関西万博で撮った、大屋根リングやパビリオンの写真です。行った日の記録としてまとめました。</span>
     </a>
   </section>
 
   <section>
     <h2>暮らしのアプリ</h2>
+    <p>毎日の暮らしの中で「これ、ちょっと不便」と思ったことを、そのまま道具にしたアプリです。どれも自分の生活で実際に使っているものだけを置いています。</p>
     <a class="app-link" href="https://komomo0680-oss.github.io/my-news/">
       <span class="name">わたし便</span><br>
       <span class="desc">登録したキーワードのニュースを、開くたび自動で集めるアプリ</span>
+      <span class="more">「近畿のお出かけ」「好きなアーティストの名前」など、気になる言葉を登録しておくと、開くたびに新しい記事が集まります。キーワードは端末の中にだけ保存されます。</span>
     </a>
     <a class="app-link" href="https://komomo0680-oss.github.io/golist/">
       <span class="name">GoList</span><br>
       <span class="desc">行きたい場所をためるリスト。タップでGoogleマップが開きます</span>
+      <span class="more">Googleマップの「保存」って、なんだか分かりづらい。そんな人のための、行きたい場所メモです。場所の名前だけでも、地図のリンクでも保存できます。</span>
     </a>
     <a class="app-link" href="https://komomo0680-oss.github.io/konishike-solo/">
       <span class="name">小西家（ソロ版）</span><br>
       <span class="desc">ニュース・予定・買い物リストをひとつにまとめた、ひとり用の生活アプリ</span>
+      <span class="more">朝いちばんに見るのは、天気と今日の予定と買い物リスト。それだけを1画面に集めた、自分のための生活アプリです。</span>
     </a>
   </section>
 
   <section>
     <h2>工房シリーズ（制作お助けアプリ）</h2>
+    <p>バナーやLINEスタンプを作る作業の中から生まれた、制作のお助け道具です。作る工程で困ったことを、次の制作が楽になるようにアプリにしました。</p>
     <a class="app-link" href="https://komomo0680-oss.github.io/Irodori-kobo/">
       <span class="name">イロドリ工房</span><br>
       <span class="desc">バナー作りのためのカラーツール</span>
+      <span class="more">バナーを作るときの色選びに。色の組み合わせを試しながら、使いたい色を決めるための道具です。</span>
     </a>
     <a class="app-link" href="https://komomo0680-oss.github.io/sukerun-kobo/">
       <span class="name">すけるん工房</span><br>
       <span class="desc">スタンプ・イラストの背景を透明にするツール</span>
+      <span class="more">LINEスタンプ作りの下ごしらえに。画像の背景を透明にして、白い縁取りと番号付けまでまとめてできます。</span>
     </a>
     <a class="app-link" href="https://komomo0680-oss.github.io/Simau-kobo/">
       <span class="name">しまう工房</span><br>
       <span class="desc">完成した作品を整理してしまう管理ツール</span>
+      <span class="more">作ったバナーやスタンプの画像が増えてきたら。作品を登録しておくと、どこに何があるか見返せます。</span>
     </a>
   </section>
 
   <section>
     <h2>LINEスタンプ</h2>
-    <p>漢字キャラクター「MOJI BEASTS」などのLINEスタンプを販売中です。</p>
+    <p>漢字キャラクター「MOJI BEASTS」などのLINEスタンプを販売中です。漢字の意味を、色と表情とポーズで表したキャラクターたちです。日常のあいさつに使えるシリーズもあります。</p>
     <div class="stamps">
       <div class="stamp r1"><img src="stamp-mojibeasts.png" alt="MOJI BEASTSのスタンプ（草）"><div class="cap">MOJI BEASTS</div></div>
       <div class="stamp r2"><img src="stamp-uribou.png" alt="博多弁うりぼうのスタンプ（なんしよーと？）"><div class="cap">博多弁うりぼう</div></div>
